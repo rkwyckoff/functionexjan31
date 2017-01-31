@@ -53,6 +53,21 @@ function translate(text) {
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
-}
+function translate(text) {
+  var output = "";
+  for (var i = 0; i < text.length; i++) {
+    if (isVowel(text[i])) {
+      output += text[i]
+    } else {
+      output += text[i] + "o" + text[i];
+    }
+  }
+  return output;
+
+  function reverseString(text) {
+    var output = "";
+    for (var i = text.length - 1; i >= 0; i--) {
+      output += text[i];
+    }
+     return output;
+  }
