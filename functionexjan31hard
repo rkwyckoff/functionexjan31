@@ -73,7 +73,13 @@ var numbers = [3, 6, 2, 56, 32, 5, 89, 32];
 // ---------------------------
 // 5. Find words that contain `is`
 // ---------------------------
-
+  var strings = ['this','is','a','collection','of','words'];
+  var substring = 'is';
+      for (var i = 0; i < strings.length; i++) {
+      if (strings[i].match(substring)) {
+        console.log(strings[i])
+}
+}
 
 
 // ---------------------------
